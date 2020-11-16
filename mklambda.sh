@@ -1,3 +1,4 @@
 #!/bin/bash
 
-zip -r ../myDeploymentPackage.zip .
+rm -f ../myDeploymentPackage.zip
+zip -r ../myDeploymentPackage.zip . -x '*.git*'
